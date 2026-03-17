@@ -1,0 +1,14 @@
+data_path: data/processed/features.parquet
+target: default
+features:
+  - credit_limit
+  - age
+  - debt_to_income
+  - credit_utilization
+  - payment_history_score
+  - max_payment_delay
+model:
+  cv_folds: 5
+  random_state: 42
+output:
+  model_path: artifacts/model.pkl
